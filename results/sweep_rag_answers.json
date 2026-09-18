@@ -1,0 +1,1848 @@
+{
+  "config": {
+    "dataset": "scifact",
+    "retriever": "hybrid",
+    "chunk_sizes": [
+      256,
+      512,
+      1024
+    ],
+    "ks": [
+      3,
+      5,
+      10
+    ],
+    "alphas": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "default_chunk_size": 512,
+    "default_k": 10,
+    "default_alpha": 0.5,
+    "skip": [],
+    "rag_qualitative": true,
+    "rag_model": "llama3.2:3b",
+    "n_queries": 10
+  },
+  "sweeps": [
+    {
+      "param": "chunk_size",
+      "value": 256,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "29638116",
+            "10608397",
+            "24660385",
+            "10906636",
+            "803312",
+            "4346436",
+            "12824568",
+            "393001",
+            "10607877"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832",
+            "92499",
+            "40234452",
+            "13116880",
+            "7583161",
+            "25985964"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "26026009",
+            "6751418",
+            "37912677",
+            "25452937",
+            "21551568",
+            "25259746",
+            "12207167",
+            "26045237"
+          ],
+          "answer": "Yes, radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume. In the context passage [9745001#0], it is stated that \"in 45 patients treated with one dose and remaining euthyroid the median thyroid volume was reduced from 73 ( interquartile range 50 - 106 ) ml to 29 (...) ml\" [9745001#0]."
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268",
+            "2266471",
+            "17195001",
+            "1227277",
+            "20829129",
+            "9822397",
+            "1974176",
+            "86160128"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "1225513",
+            "11603066",
+            "196664003",
+            "12370190",
+            "8698857",
+            "21578627",
+            "25007443",
+            "19851614",
+            "7421677",
+            "44172171"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "34287602",
+            "2947124",
+            "26731863",
+            "6163801",
+            "29367554",
+            "16572581"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "34287602",
+            "2947124",
+            "26731863",
+            "6163801",
+            "20960682",
+            "16572581"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138",
+            "140874",
+            "14530534",
+            "4926049",
+            "8385277",
+            "24896957",
+            "26064942",
+            "1982286"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "34025053",
+            "2388819",
+            "7115651",
+            "13940200",
+            "1855679",
+            "2462673",
+            "5567005",
+            "24069089"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "18038955",
+            "2817000",
+            "5966635",
+            "25254425",
+            "11844791",
+            "1259280",
+            "406733",
+            "16626264"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "chunk_size",
+      "value": 512,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "10608397",
+            "29638116",
+            "4346436",
+            "803312",
+            "10906636",
+            "40212412",
+            "3874000",
+            "10786948",
+            "31715818"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832",
+            "92499",
+            "13116880",
+            "7583161",
+            "3391547",
+            "22186938"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly [25516011#0]."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "26026009",
+            "37912677",
+            "25452937",
+            "21551568",
+            "3944632",
+            "12207167",
+            "26045237"
+          ],
+          "answer": "The provided context passages support the claim that radioiodine treatment of non-toxic multinodular goitre can reduce thyroid volume.\n\nIn the first passage, it is stated: \"the median reduction was 40 (22 - 48) ml (60% reduction, p < 0.0001), half of which occurred within three months.\" [9745001#2]\n\nAdditionally, in the same passage, it is mentioned that \"in 45 patients treated with one dose and remaining euthyroid the median thyroid volume was reduced from 73 (interquartile range 50 - 106) ml to 29 (23 - 48) ml at 24 months.\" [9745001#2]\n\nThese statements suggest that radioiodine treatment can lead to a significant reduction in thyroid volume, with some patients experiencing a 60% reduction in volume."
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268",
+            "17195001",
+            "1227277",
+            "1974176",
+            "2266471",
+            "86160128",
+            "20829129",
+            "12943966"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "11603066",
+            "196664003",
+            "1225513",
+            "12370190",
+            "21578627",
+            "7421677",
+            "24742375",
+            "8734695",
+            "14328288",
+            "19851614"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "72159",
+            "26071782"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "20960682",
+            "72159"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus, as suggested by the fact that viral titers in ex vivo cultures of macrophages, dendritic cells, fibroblasts, and cerebellar granule cell neurons from IFN-\u03b2(-) mice were greater than in wild-type cells [10559501#0]."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138",
+            "14530534",
+            "24896957",
+            "140874",
+            "1982286",
+            "6078882",
+            "36713289",
+            "4926049"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819",
+            "7115651",
+            "34025053",
+            "13940200",
+            "5567005",
+            "36642096",
+            "24069089",
+            "9655347"
+          ],
+          "answer": "The provided context passages suggest that reduced responsiveness to interleukin-2 (IL-2) in regulatory T cells is indeed associated with greater resistance to autoimmune diseases, including Type 1 Diabetes.\n\n[13923140#0] shows that engineered haplodeficiency of IL-2 gene expression reduces T cell IL-2 production by twofold and mimics the autoimmune dysregulatory effects of naturally occurring susceptibility alleles of IL-2. Reduced IL-2 production achieved by either genetic mechanism correlates with reduced function of CD4+CD25+ regulatory T cells, which are critical for maintaining immune homeostasis.\n\n[2388819#0] describes a method to expand antigen-specific regulatory T cells from autoimmune-prone nonobese diabetic mice, and the expanded Tregs express a classical cell surface phenotype and function both in vitro and in vivo to suppress effector T cell functions. However, the study also notes that reduced responsiveness to IL-2 in regulatory T cells may contribute to diminished CD4+CD25+ regulatory T cell function.\n\n[13940200#0] localizes the type 1 diabetes association in the interleukin 2 receptor alpha (IL-2RA) gene region to two independent groups of SNPs, spanning overlapping regions of 14 and 40 kb, encompassing IL-2RA intron 1 and the 5' regions of IL-2RA and RBM17. Furthermore, the study associates IL-2RA T1D susceptibility genotypes with lower circulating levels of the biomarker, soluble IL-2RA (p = 6.28 \u00d7 10^-28), suggesting that an inherited lower immune responsiveness predisposes to Type 1 Diabetes.\n\n[5567005#0] discusses the etiology of Type 1 Diabetes and notes that at least ten genes can be singled out as strong causal candidates, including IL-2RA. The known functions of these genes indicate the primary etiological pathways of this disease, including chemokine and cytokine signaling, which may involve reduced responsiveness to IL-2 in regulatory T cells.\n\n[36642096#0] studies the effects of a nonactivating humanized monoclonal antibody against CD3 on the loss of insulin production in patients with Type 1 Diabetes Mellitus. The study finds that treatment with the monoclonal antibody maintains or improves insulin production after one year in 9 of the 12 patients in the treatment group, whereas only 2 of the 12 controls had a sustained response (p = 0."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "2817000",
+            "18038955",
+            "5966635",
+            "25254425",
+            "11844791",
+            "1259280",
+            "16626264",
+            "406733"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "chunk_size",
+      "value": 1024,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "10608397",
+            "29638116",
+            "4346436",
+            "803312",
+            "40212412",
+            "10906636",
+            "3874000",
+            "10786948",
+            "31715818"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832",
+            "92499",
+            "13116880",
+            "7583161",
+            "3391547",
+            "22186938"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly. \n\n[5415832#0]"
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "26026009",
+            "37912677",
+            "25452937",
+            "21551568",
+            "3944632",
+            "12207167",
+            "18414462"
+          ],
+          "answer": "[3944632#0]\n\nRadioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.\n\n[21551568#0]\n\nThe data provide strong genetic implication that aberrant activation of the PI3K/AKT pathway plays an extensive role in thyroid tumorigenesis, particularly in FTC and ATC, and promotes progression of BTA to FTC and to ATC as the genetic alterations of this pathway accumulate. The PI3K/AKT pathway may thus be a major therapeutic target in thyroid cancers.\n\n[18414462#0]\n\nThyroid hormone receptor repression linked to type I pneumocyte associated respiratory distress syndrome. Although the lung is a defining feature of air-breathing animals, the pathway controlling the formation of type I pneumocytes, the cells that mediate gas exchange, is poorly understood. In contrast, the glucocorticoid receptor and its cognate ligand have long been known to promote type II pneumocyte maturation; prenatal administration of glucocorticoids is commonly used to attenuate the severity of infant respiratory distress syndrome (RDS). Here we show that knock-in mutations of the nuclear co-repressor Smrt (silencing mediator of retinoid and thyroid hormone receptors) in C57BL/6 mice (Smrtmrid) produces a previously unidentified respiratory distress syndrome caused by prematurity of the type I pneumocyte. Though unresponsive to glucocorticoids, treatment with anti-thyroid hormone drugs (propylthiouracil or methimazole) completely rescues Smrt-induced RDS, suggesting an unrecognized and essential role for the thyroid hormone receptor (TR) in lung development. We show that TR and Smrt control type I pneumocyte differentiation through KLF2, which, in turn, seems to directly activate the type I pneumocyte gene program. Conversely, mice without lung KLF2 lack mature type I pneumocytes and die shortly after birth, closely recapitulating the Smrtmrid phenotype. These results identify TR as a second nuclear receptor involved in lung development, specifically type I pneumocyte differentiation, and suggest a possible new type of therapeutic option in the treatment of RDS that is unresponsive to glucocorticoids.\n\n[3944632#0]\n\nStereotactic radiosurgery plus whole-brain radiation therapy vs stereotactic radiosurgery alone for treatment of brain metastases: a randomized controlled trial. Context In patients with brain metastases, it is unclear whether adding up-front whole-brain radiation therapy (WBRT) to stereotactic"
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268",
+            "17195001",
+            "1227277",
+            "2266471",
+            "1974176",
+            "86160128",
+            "20829129",
+            "12943966"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "11603066",
+            "196664003",
+            "1225513",
+            "12370190",
+            "21578627",
+            "7421677",
+            "24742375",
+            "8734695",
+            "14328288",
+            "19851614"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "72159",
+            "26071782"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "20960682",
+            "72159"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus, as evidenced by the fact that viral titers in ex vivo cultures of macrophages, dendritic cells, fibroblasts, and cerebellar granule cell neurons from IFN-\u03b2(-) mice were greater than in wild-type cells [10559501#0]."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138",
+            "14530534",
+            "24896957",
+            "140874",
+            "1982286",
+            "6078882",
+            "36713289",
+            "4926049"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819",
+            "7115651",
+            "13940200",
+            "34025053",
+            "5567005",
+            "36642096",
+            "24069089",
+            "9655347"
+          ],
+          "answer": "The presence of an autoimmune disease-associated IL2RA haplotype correlates with diminished IL-2 responsiveness in Ag-experienced CD4+ T cells, as measured by phosphorylation of STAT5A, and is associated with lower levels of FoxP3 expression by Tregs and a reduction in their ability to suppress proliferation of autologous effector T cells. [11899391#0]\n\nThis suggests that reduced responsiveness to interleukin-2 in regulatory T cells is indeed associated with greater resistance to autoimmune diseases such as Type 1 Diabetes."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "2817000",
+            "18038955",
+            "5966635",
+            "25254425",
+            "11844791",
+            "1259280",
+            "16626264",
+            "406733"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "k",
+      "value": 3,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "10608397",
+            "29638116"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418"
+          ],
+          "answer": "The radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume. \n\nIn the study on radioiodine treatment for hyperthyroidism in patients with Graves' disease, uninodular goitre, and multinodular goitre [43122426#0], it was found that patients with a multinodular goitre had a mean (se) dose of 613 (77) mbq 131-i, resulting in a remission rate of 79% at 6 months. \n\nAdditionally, the study on dosimetry and risk estimates of radioiodine therapy for large, multinodular goiters [6751418#0] found that cumulated absorbed doses on the thyroid were 94 + / - 25 gy for euthyroid patients, which may contribute to a reduction in thyroid volume. \n\nLastly, the study on radioiodine treatment of multinodular non-toxic goitre [9745001#0] reported that the median reduction in thyroid volume was 40 (22-48) ml (60% reduction), half of which occurred within three months, indicating a significant reduction in thyroid volume following radioiodine treatment. \n\n[43122426#0][6751418#0][9745001#0]"
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "11603066",
+            "196664003",
+            "1225513"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "2817000"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "k",
+      "value": 5,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "10608397",
+            "29638116",
+            "4346436",
+            "803312"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly. [5415832#0], [34982259#0]."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "26026009",
+            "37912677"
+          ],
+          "answer": "The radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume. \n\nIn the study on patients with a growing multinodular non-toxic goitre, the median thyroid volume was reduced from 73 (interquartile range 50-106) ml to 29 (23-48) ml at 24 months in the 39 patients in whom this was measured during follow-up. The median reduction was 40 (22-48) ml (60% reduction, p < 0.0001), half of which occurred within three months. [9745001#3]\n\nAdditionally, a study on patients with multinodular goitres found that the cumulative incidence of hypothyroidism was 5% at 3 months, 14% at 6 months, 24% at 1 year and 24% at 5 years after radioiodine treatment. This suggests that thyroid volume reduction is associated with a lower risk of developing hypothyroidism. [43122426#4]"
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268",
+            "17195001",
+            "1227277"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "11603066",
+            "196664003",
+            "1225513",
+            "12370190",
+            "21578627"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus, as suggested by the correlation between the epigenetic state and microRNA-mediated regulation of interferon-stimulated genes (ISGs) with enhanced antiviral response in granule cell neurons [12885341#0]."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138",
+            "14530534",
+            "24896957"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819",
+            "7115651",
+            "34025053"
+          ],
+          "answer": "The provided context passages do not support the claim that reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.\n\nHowever, it can be inferred that reduced responsiveness to interleukin-2 (IL-2) in regulatory T cells may contribute to a higher susceptibility to autoimmune diseases like Type 1 Diabetes. For example, studies have shown that IL-2 promotes the development of regulatory T cells and confers protection from autoimmune disease [7115651#0]. In contrast, reduced IL-2 responsiveness in regulatory T cells is associated with lower levels of Foxp3 expression and a reduction in their ability to suppress proliferation of autologous effector T cells [11899391#0].\n\nIt's also worth noting that the absence or reduction of IL-21, another cytokine that shares the common receptor \u03b3-chain with IL-2, has been associated with increased susceptibility to autoimmune diseases like Type 1 Diabetes and experimental autoimmune uveitis [7115651#0]."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "2817000",
+            "18038955",
+            "5966635"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "k",
+      "value": 10,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "10608397",
+            "29638116",
+            "4346436",
+            "803312",
+            "10906636",
+            "40212412",
+            "3874000",
+            "10786948",
+            "31715818"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832",
+            "92499",
+            "13116880",
+            "7583161",
+            "3391547",
+            "22186938"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly. \n\n[5415832#0]\nSequential administration of 5-chloro-2-deoxyuridine and 5-iodo-2-deoxyuridine indicated that all hscs segregate their chromosomes randomly."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "26026009",
+            "37912677",
+            "25452937",
+            "21551568",
+            "3944632",
+            "12207167",
+            "26045237"
+          ],
+          "answer": "The provided context passages support this claim.\n\nIn the first passage [9745001#0], it is stated that \"the median reduction was 40 (22 - 48) ml (60% reduction, p < 0.0001), half of which occurred within three months.\" This indicates a significant reduction in thyroid volume after radioiodine treatment.\n\nAdditionally, the second passage [43122426#0] mentions that patients with multinodular goitre had a \"mean (se) dose of 613 (77) mbq 131-i\" and a \"remission rate of 79% at 6 months\". While this passage does not directly mention thyroid volume reduction, it suggests that radioiodine treatment was effective in managing the condition.\n\nThe third passage [6751418#0] discusses dosimetry and risk estimates for radioiodine therapy, but does not provide information on thyroid volume reduction. However, it does mention that radiation absorbed doses in the thyroid were estimated after therapeutic administration of 131i (3.7 mbq), which is consistent with the use of radioiodine treatment.\n\nThe fourth passage [25452937#0] discusses genetic alterations and their relationship to the phosphatidylinositol 3-kinase/akt pathway in thyroid cancer, but does not provide information on thyroid volume reduction.\n\nTherefore, based on the available information, it can be concluded that radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume."
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268",
+            "17195001",
+            "1227277",
+            "1974176",
+            "2266471",
+            "86160128",
+            "20829129",
+            "12943966"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "11603066",
+            "196664003",
+            "1225513",
+            "12370190",
+            "21578627",
+            "7421677",
+            "24742375",
+            "8734695",
+            "14328288",
+            "19851614"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "72159",
+            "26071782"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "20960682",
+            "72159"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduces survival of granule cell neurons that are infected by West Nile virus, as evidenced by the fact that viral titers in ex vivo cultures of macrophages, dendritic cells, fibroblasts, and cerebellar granule cell neurons from IFN-\u03b2(-/-) mice were greater than in wild-type cells [10559501#0]."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138",
+            "14530534",
+            "24896957",
+            "140874",
+            "1982286",
+            "6078882",
+            "36713289",
+            "4926049"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819",
+            "7115651",
+            "34025053",
+            "13940200",
+            "5567005",
+            "36642096",
+            "24069089",
+            "9655347"
+          ],
+          "answer": "The provided context does not answer this question. While the passages discuss the role of interleukin-2 (IL-2) and its receptor alpha (IL2RA) in immune regulation, they do not explicitly state that reduced responsiveness to IL-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "2817000",
+            "18038955",
+            "5966635",
+            "25254425",
+            "11844791",
+            "1259280",
+            "16626264",
+            "406733"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "alpha",
+      "value": 0.0,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "10608397",
+            "43385013",
+            "10906636",
+            "40212412",
+            "27049238",
+            "803312",
+            "10931595",
+            "12824568",
+            "393001",
+            "24660385"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "4398832",
+            "25516011",
+            "22186938",
+            "40234452",
+            "34982259",
+            "22973574",
+            "7583161",
+            "20186814",
+            "42787108"
+          ],
+          "answer": "The provided context does not answer this question. The text states that sequential administration of 5-chloro-2-deoxyuridine and 5-iodo-2-deoxyuridine indicated that all HSCs segregate their chromosomes randomly, but it does not confirm that this is true for all hematopoietic stem cells in general."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "26026009",
+            "43122426",
+            "6751418",
+            "37912677",
+            "21551568",
+            "20544428",
+            "18414462",
+            "20611846",
+            "25452937"
+          ],
+          "answer": "[doc_id#0]\nRadioiodine treatment of non-toxic multinodular goitre reduces thyroid volume. A study published in the Journal of Clinical Endocrinology and Metabolism found that radioiodine treatment significantly reduced thyroid volume in patients with non-toxic multinodular goitre.\n\n[doc_id#1]\nThe study involved 47 patients with non-toxic multinodular goitre who received a total dose of 100-200 mCi of radioactive iodine. The results showed that the mean thyroid volume decreased by 23% after treatment, and 71% of patients had a significant reduction in thyroid volume.\n\n[doc_id#2]\nAnother study published in the European Journal of Nuclear Medicine and Molecular Imaging found that radioiodine treatment also reduced thyroid volume in patients with non-toxic multinodular goitre. The study involved 30 patients who received a total dose of 100-200 mCi of radioactive iodine, and the results showed that the mean thyroid volume decreased by 25% after treatment.\n\n[doc_id#3]\nA review article published in the Journal of Clinical Endocrinology and Metabolism concluded that radioiodine treatment is an effective treatment for non-toxic multinodular goitre, with significant reductions in thyroid volume reported in multiple studies. The authors noted that radioiodine treatment can also reduce symptoms such as hyperthyroidism and goitre size.\n\n[doc_id#4]\nA study published in the Journal of Nuclear Medicine found that radioiodine treatment not only reduced thyroid volume but also improved quality of life for patients with non-toxic multinodular goitre. The study involved 20 patients who received a total dose of 100-200 mCi of radioactive iodine, and the results showed significant improvements in symptoms such as fatigue, weight loss, and anxiety.\n\n[doc_id#5]\nIn conclusion, radioiodine treatment is an effective treatment for non-toxic multinodular goitre, with significant reductions in thyroid volume reported in multiple studies. The treatment can also improve quality of life for patients by reducing symptoms such as hyperthyroidism and goitre size."
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "2266471",
+            "34760396",
+            "15615957",
+            "13162391",
+            "1974176",
+            "4658268",
+            "1227277",
+            "10790846"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "1225513",
+            "11603066",
+            "196664003",
+            "44172171",
+            "9875570",
+            "40429879",
+            "19851614",
+            "20602517",
+            "26996935",
+            "6847208"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "38376189",
+            "12885341",
+            "34287602",
+            "26731863",
+            "2947124",
+            "6163801",
+            "28644298",
+            "26071782"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "38376189",
+            "12885341",
+            "34287602",
+            "26731863",
+            "2947124",
+            "6163801",
+            "20960682",
+            "28644298"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "5373138",
+            "24995939",
+            "8494570",
+            "14530534",
+            "140874",
+            "26064942",
+            "14973286",
+            "24896957",
+            "1982286",
+            "4312169"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "7115651",
+            "34025053",
+            "2388819",
+            "1855679",
+            "36642096",
+            "33535222",
+            "27166444",
+            "9822397"
+          ],
+          "answer": "The provided context passages suggest that reduced responsiveness to interleukin-2 (IL-2) in regulatory T cells (Tregs) may be associated with a lower risk of developing autoimmune diseases, including Type 1 Diabetes.\n\n[36642096#0] suggests that IL-21 promotes differentiation of Th17 cells and is implicated in several autoimmune diseases, including Type 1 Diabetes. However, it does not explicitly state the relationship between reduced responsiveness to IL-2 in Tregs and resistance to autoimmune diseases.\n\n[11899391#0] states that an association between IL-2Ra variation and reduced IL-2 signaling contributes to diminished CD4+CD25+ regulatory T cell function, which may be associated with a lower risk of developing autoimmune diseases. However, it does not explicitly state the relationship between reduced responsiveness to IL-2 in Tregs and resistance to autoimmune diseases.\n\n[2388819#0] suggests that reduced responsiveness to IL-2 in Tregs may contribute to the development of autoimmunity, but this is not directly related to a lower risk of developing autoimmune diseases.\n\nIn summary, while the provided context passages suggest that reduced responsiveness to IL-2 in Tregs may be associated with a lower risk of developing autoimmune diseases, they do not provide explicit evidence for this association."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "5966635",
+            "15778034",
+            "25254425",
+            "2817000",
+            "18038955",
+            "17518195",
+            "11844791",
+            "1259280",
+            "16626264"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "alpha",
+      "value": 0.25,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "10608397",
+            "43385013",
+            "10906636",
+            "803312",
+            "40212412",
+            "27049238",
+            "10931595",
+            "12824568",
+            "393001",
+            "10607877"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "25516011",
+            "34982259",
+            "13116880",
+            "14550841",
+            "92499",
+            "7583161",
+            "22186938",
+            "5415832",
+            "40234452"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly [14550841#0]."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "26026009",
+            "6751418",
+            "37912677",
+            "21551568",
+            "25452937",
+            "18414462",
+            "3944632",
+            "20544428"
+          ],
+          "answer": "[3944632#0]"
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "2266471",
+            "4658268",
+            "1227277",
+            "1974176",
+            "34760396",
+            "15615957",
+            "13162391",
+            "17195001"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "1225513",
+            "11603066",
+            "196664003",
+            "12370190",
+            "44172171",
+            "9875570",
+            "19851614",
+            "21578627",
+            "40429879",
+            "7421677"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "38376189",
+            "12885341",
+            "34287602",
+            "2947124",
+            "26731863",
+            "6163801",
+            "26071782",
+            "72159"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "38376189",
+            "12885341",
+            "34287602",
+            "2947124",
+            "26731863",
+            "6163801",
+            "20960682",
+            "26071782"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "5373138",
+            "8494570",
+            "24995939",
+            "14530534",
+            "140874",
+            "26064942",
+            "24896957",
+            "1982286",
+            "14973286",
+            "4312169"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "7115651",
+            "2388819",
+            "34025053",
+            "1855679",
+            "36642096",
+            "13940200",
+            "24069089",
+            "33535222"
+          ],
+          "answer": "The provided context does not answer this question. While the passages discuss the role of interleukin-2 (IL-2) and its receptor alpha (IL2RA) in immune regulation, they do not directly address the relationship between reduced responsiveness to IL-2 in regulatory T cells and greater resistance to autoimmune diseases such as Type 1 Diabetes."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "5966635",
+            "2817000",
+            "18038955",
+            "25254425",
+            "11844791",
+            "1259280",
+            "17518195",
+            "16626264"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "alpha",
+      "value": 0.5,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "43385013",
+            "10608397",
+            "29638116",
+            "4346436",
+            "803312",
+            "10906636",
+            "40212412",
+            "3874000",
+            "10786948",
+            "31715818"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832",
+            "92499",
+            "13116880",
+            "7583161",
+            "3391547",
+            "22186938"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly. [5415832#0]"
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "26026009",
+            "37912677",
+            "25452937",
+            "21551568",
+            "3944632",
+            "12207167",
+            "26045237"
+          ],
+          "answer": "The provided context passages support the claim that radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.\n\nIn the first passage, it is stated that \"the median reduction was 40 (22 - 48) ml (60% reduction, p < 0.0001), half of which occurred within three months.\" [9745001#0] This suggests that radioiodine treatment leads to a significant reduction in thyroid volume.\n\nIn the second passage, it is mentioned that \"patients with a multinodular goitre (21) were initially treated with a mean (se) dose of 613 (77) mbq 131-i with a remission rate of 79% at 6 months and a cumulative relapse rate of 26% at 1 year and 39% at 5 years.\" [43122426#0] Although this passage does not directly state that radioiodine treatment reduces thyroid volume, it implies that the treatment is effective in managing the condition.\n\nIn the third passage, it is stated that \"pik3ca copy gain was associated with increased pik3ca protein expression.\" However, no direct relationship between radioiodine treatment and reduced thyroid volume is mentioned. [21551568#0]\n\nThe remaining passages do not provide relevant information on the topic of radioiodine treatment reducing thyroid volume.\n\nTherefore, based on the provided context passages, it can be concluded that radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume."
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "18557974",
+            "4658268",
+            "17195001",
+            "1227277",
+            "1974176",
+            "2266471",
+            "86160128",
+            "20829129",
+            "12943966"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "11603066",
+            "196664003",
+            "1225513",
+            "12370190",
+            "21578627",
+            "7421677",
+            "24742375",
+            "8734695",
+            "14328288",
+            "19851614"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "72159",
+            "26071782"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "38376189",
+            "2947124",
+            "34287602",
+            "26731863",
+            "6163801",
+            "20960682",
+            "72159"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus [38376189#0, 26731863#0]. Specifically, the study found that viral titers in ex vivo cultures of macrophages, dendritic cells, fibroblasts, and cerebellar granule cell neurons, but not cortical neurons, from IFN-\u03b2(-) mice were greater than in wild-type cells [10559501#0], suggesting that interferon-induced genes may play a role in restricting viral replication in certain neuronal subtypes."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "5373138",
+            "14530534",
+            "24896957",
+            "140874",
+            "1982286",
+            "6078882",
+            "36713289",
+            "4926049"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819",
+            "7115651",
+            "34025053",
+            "13940200",
+            "5567005",
+            "36642096",
+            "24069089",
+            "9655347"
+          ],
+          "answer": "The provided context passages suggest that reduced responsiveness to interleukin-2 (IL-2) in regulatory T cells is actually associated with increased susceptibility, not resistance, to autoimmune diseases such as Type 1 Diabetes.\n\nHowever, the passage [13923140#0] does mention that a reduction in IL-2 underpins the destabilization of immune homeostasis and correlates with reduced function of CD4+CD25+ regulatory T cells. This suggests that reduced responsiveness to IL-2 may contribute to an increased risk of autoimmune diseases.\n\nIn contrast, the passage [7115651#0] does mention that IL-21 promotes differentiation of Th17 cells and is implicated in several autoimmune diseases, including Type 1 Diabetes. However, this does not directly address the relationship between reduced responsiveness to IL-2 and resistance to autoimmune diseases.\n\nTherefore, I must conclude that The provided context passages do not provide a clear answer to the question, but rather suggest that reduced responsiveness to interleukin-2 in regulatory T cells may contribute to an increased risk of autoimmune diseases."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "2817000",
+            "18038955",
+            "5966635",
+            "25254425",
+            "11844791",
+            "1259280",
+            "16626264",
+            "406733"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "alpha",
+      "value": 0.75,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "29638116",
+            "4346436",
+            "3874000",
+            "10786948",
+            "31715818",
+            "17388232",
+            "86129154",
+            "927561",
+            "19855358",
+            "1769799"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "4381486",
+            "34982259",
+            "25516011",
+            "14550841",
+            "5415832",
+            "92499",
+            "13116880",
+            "9154703",
+            "1944452",
+            "7583161"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly [25516011#0]."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "37912677",
+            "26026009",
+            "25452937",
+            "12207167",
+            "3944632",
+            "21551568",
+            "26045237"
+          ],
+          "answer": "Yes, radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.\n\nIn 45 patients treated with a single dose of 131i and remaining euthyroid, the median thyroid volume was reduced from 73 (interquartile range 50-106) ml to 29 (23-48) ml at 24 months in the 39 patients in whom this was measured during follow-up. The median reduction was 40 (22-48) ml (60% reduction, p < 0.0001), half of which occurred within three months.\n\n[9745001#0] [43122426#0]"
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "17195001",
+            "86160128",
+            "4658268",
+            "20829129",
+            "12943966",
+            "1227277",
+            "13774178",
+            "11742219",
+            "4680262"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "196664003",
+            "12370190",
+            "11603066",
+            "21578627",
+            "1225513",
+            "7421677",
+            "24742375",
+            "8734695",
+            "14328288",
+            "20620012"
+          ],
+          "answer": "The binding affinity is a critical parameter governing system-wide signaling fidelity for bacterial signal transduction proteins, and specificity residues determine binding affinity for two-component signal transduction systems [11603066#0]. \n\nAdditionally, the data indicate that preferential binding affinity is the basis for signaling fidelity in bacterial two-component systems [11603066#0]."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "2947124",
+            "26731863",
+            "38376189",
+            "34287602",
+            "8979167",
+            "34378726",
+            "6163801"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "2947124",
+            "26731863",
+            "38376189",
+            "34287602",
+            "8979167",
+            "34378726",
+            "9539248"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus, as evidenced by the fact that viral titers in ex vivo cultures of macrophages, dendritic cells, fibroblasts, and cerebellar granule cell neurons, but not cortical neurons, from IFN-\u03b2(-) mice were greater than in wild-type cells [10559501#0]."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "24995939",
+            "36713289",
+            "4926049",
+            "6078882",
+            "4457160",
+            "6532806",
+            "667451",
+            "5373138",
+            "39462488"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13923140",
+            "2388819",
+            "13940200",
+            "5567005",
+            "34025053",
+            "7115651",
+            "8325952",
+            "24069089",
+            "9655347"
+          ],
+          "answer": "The provided context does not answer this question. While the passages discuss the role of IL-2 and regulatory T cells (Tregs) in autoimmune diseases, they do not explicitly state that reduced responsiveness to interleukin-2 in Tregs is associated with greater resistance to Type 1 Diabetes. In fact, the passages suggest the opposite: that reduced IL-2 responsiveness in Tregs may contribute to the development of autoimmune diseases like Type 1 Diabetes."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "18038955",
+            "2817000",
+            "406733",
+            "5966635",
+            "11844791",
+            "32638085",
+            "16626264",
+            "1259280"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    },
+    {
+      "param": "alpha",
+      "value": 1.0,
+      "answers": [
+        {
+          "qid": "1",
+          "query": "0-dimensional biomaterials show inductive properties.",
+          "retrieved_doc_ids": [
+            "29638116",
+            "4346436",
+            "3874000",
+            "10786948",
+            "31715818",
+            "17388232",
+            "86129154",
+            "927561",
+            "19855358",
+            "1769799"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "100",
+          "query": "All hematopoietic stem cells segregate their chromosomes randomly.",
+          "retrieved_doc_ids": [
+            "34982259",
+            "14550841",
+            "4381486",
+            "25516011",
+            "5415832",
+            "92499",
+            "13116880",
+            "9154703",
+            "1944452",
+            "11020675"
+          ],
+          "answer": "All hematopoietic stem cells segregate their chromosomes randomly [9154703#0]."
+        },
+        {
+          "qid": "1012",
+          "query": "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+          "retrieved_doc_ids": [
+            "9745001",
+            "43122426",
+            "6751418",
+            "37912677",
+            "26026009",
+            "12207167",
+            "3944632",
+            "25452937",
+            "26045237",
+            "9555784"
+          ],
+          "answer": "Yes, radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume. \n\nIn 45 patients treated with a single dose of 131i and remaining euthyroid, the median thyroid volume was reduced from 73 ( interquartile range 50 - 106 ) ml to 29 ( 23 - 48 ) ml at 24 months in the 39 patients in whom this was measured during follow up. The median reduction was 40 ( 22 - 48 ) ml ( 60 % reduction, p < 0. 0001 ), half of which occurred within three months.\n\n[9745001#2] [43122426#3] [26026009#4]"
+        },
+        {
+          "qid": "1014",
+          "query": "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+          "retrieved_doc_ids": [
+            "6277638",
+            "86160128",
+            "20829129",
+            "17195001",
+            "12943966",
+            "13774178",
+            "11742219",
+            "4680262",
+            "13958154",
+            "13794374"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1019",
+          "query": "Rapid phosphotransfer rates govern fidelity in two component systems",
+          "retrieved_doc_ids": [
+            "196664003",
+            "12370190",
+            "21578627",
+            "11603066",
+            "7421677",
+            "24742375",
+            "8734695",
+            "14328288",
+            "20620012",
+            "7116734"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1020",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "2947124",
+            "8979167",
+            "26731863",
+            "34378726",
+            "30933307",
+            "15425958",
+            "26133404"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1021",
+          "query": "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+          "retrieved_doc_ids": [
+            "10559501",
+            "9433958",
+            "12885341",
+            "2947124",
+            "8979167",
+            "26731863",
+            "34378726",
+            "15425958",
+            "30933307",
+            "9539248"
+          ],
+          "answer": "The rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus [9433958#0, 10559501#0]. Specifically, the study found that viral titers in ex vivo cultures of macrophages, dendritic cells, fibroblasts, and cerebellar granule cell neurons from IFN-\u03b2(-) mice were greater than in wild-type cells, suggesting that interferon-induced genes play a role in restricting viral replication in these cell types [10559501#0]."
+        },
+        {
+          "qid": "1024",
+          "query": "Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.",
+          "retrieved_doc_ids": [
+            "8494570",
+            "36713289",
+            "4926049",
+            "6078882",
+            "4457160",
+            "6532806",
+            "667451",
+            "39462488",
+            "7468449",
+            "24995939"
+          ],
+          "answer": "The provided context does not answer this question."
+        },
+        {
+          "qid": "1029",
+          "query": "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+          "retrieved_doc_ids": [
+            "11899391",
+            "13940200",
+            "2388819",
+            "13923140",
+            "5567005",
+            "8325952",
+            "16058322",
+            "9655347",
+            "24069089",
+            "34025053"
+          ],
+          "answer": "The provided context does not answer this question. The passages discuss the impact of IL-2Ra variation on immune regulation and its association with type 1 diabetes, but they do not explicitly state that reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes."
+        },
+        {
+          "qid": "1041",
+          "query": "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+          "retrieved_doc_ids": [
+            "9451052",
+            "15778034",
+            "18038955",
+            "2817000",
+            "406733",
+            "32638085",
+            "43156471",
+            "18694784",
+            "27274441",
+            "11844791"
+          ],
+          "answer": "The provided context does not answer this question."
+        }
+      ]
+    }
+  ]
+}

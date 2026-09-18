@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Datasets are downloaded on first run (~2 GB unpacked)
+datasets/
+
+# Local model / tool caches
+.cache/
+*.log
+
+# OS
+.DS_Store
